@@ -7,12 +7,12 @@
 
 @import "blocks/main-nav.css";
 @import "blocks/btn.css";
+@import "blocks/footer.css";
 
 /*
 @import "blocks/contacts.css";
 @import "blocks/editor.css";
 @import "blocks/features.css";
-@import "blocks/footer.css";
 @import "blocks/form.css";
 @import "blocks/likes.css";
 @import "blocks/logo.css";
@@ -91,7 +91,6 @@
   position: relative;
 }
 .logo--wed-page {
-  
 }
 .main-href {
   text-decoration: none;
@@ -132,6 +131,9 @@
   font-weight: 400;
   color: #e2160e;
 }
+.logo--footer {
+  width: 100px;
+}
 
 .img__main {
   width: 33%;
@@ -147,3 +149,20 @@
   flex-wrap: wrap;
   align-items: center;
 }
+.promo {
+  line-height: 16px;
+}
+/*
+.promo__foto {
+  display: block;
+  width: 35vw;
+  height: 35vw;
+  background: url("../img/jukov.jpg") no-repeat center;
+  background-size: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+}*/
+/*
+.promo__title {
+  position: absolute;
+}*/
