@@ -1,0 +1,130 @@
+.main-nav {
+}
+.main-nav__wrap {
+  @media ($desktop-width) {
+    @mixin wrap-desktop;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+.main-nav__header {
+  position: relative;
+  height: 0px;
+  @media ($mobile-width) {
+    @mixin wrap-mobile;
+    height: 75px;
+  }
+  @media ($tablet-width) {
+    @mixin wrap-tablet;
+    min-height: 83px;
+    height: 100px;
+  }
+}
+.main-nav__btn-toggle {
+  display: none;
+
+  @media ($mobile-width) {
+    @mixin btn-reset;
+    position: absolute;
+    top: 33px;
+    right: 6.25%;
+    width: 35px;
+    height: 35px;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 2px;
+      background-color: black;
+      box-shadow: 0 8px 0 0 black, 0 16px 0 0 black;
+    }
+  }
+}
+.main-nav__list {
+  @mixin reset-ul;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+
+  @media ($mobile-width) {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    animation: hint-anim-hide 0.5s;
+    animation-fill-mode: forwards;
+  }
+  &--opened {
+    display: block;
+    background-color: rgba(255,255,255,.95);
+    top: 0;
+    animation: hint-anim-show 0.5s;
+    animation-fill-mode: forwards;
+  }
+  @media ($tablet-width) {
+    position: relative;
+  }
+}
+.main-nav__item a {
+  position: relative;
+  @mixin link-style;
+  @media ($tablet-width) {
+    @mixin link-style;
+  }
+  @media ($desktop-width) {
+    @mixin font-light 18px, 60px;
+  }
+}
+/* Поправить */
+.main-nav__item {
+  text-align: center;
+  @media ($desktop-width) {
+    &--active a::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      border: 1px solid  #e2160e;
+    }
+  }
+  @media ($tablet-width) {
+    &--active a::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      border: 1px solid  #e2160e;
+    }
+  }
+}
+
+@keyframes hint-anim-show {
+  0% {
+    display: none;
+    top: -300px;
+  }
+  1% {
+    display: block;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes hint-anim-hide {
+  0% {
+    display: block;
+    top: 0;
+  }
+  99% {
+    top: -300px;
+  }
+  100% {
+    display: none;
+  }
+}

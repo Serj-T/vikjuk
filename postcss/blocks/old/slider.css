@@ -1,0 +1,25 @@
+.slider {
+  
+}
+.slider__item {
+  margin: 0;
+  &--first {
+
+  }
+  &--second {
+    
+  }
+  &--third {
+    
+  }
+}
+.slider__item:nth-child(n+2) {
+  display: none;
+}
+.slider__controls {
+  width: 100px;
+  height: 20px;
+  margin: 0 auto;
+  margin-top: 28px;
+  background-color: gray;
+}

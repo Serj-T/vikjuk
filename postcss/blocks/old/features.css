@@ -1,0 +1,36 @@
+.features {
+}
+.features__header {
+}
+.features__header-wrap {
+  padding-top: 41px;
+  padding-right: 20px;
+  padding-bottom: 37px;
+  padding-left: 20px;
+}
+.features__list-wrap {
+  @mixin reset-ul;
+  @mixin wrap;
+  padding-top: 48px;
+  padding-bottom: 287px;
+  text-align: center;
+}
+.features__item {
+  margin-bottom: 31px;
+}
+.features__item-text {
+  margin-top: 10px;
+}
+.features__item-title {
+  @mixin font-bold 18px, 24px;
+  color: black;
+}
+.features__list {
+  background-color: $bg-color-grey;
+}
+.features__promo-title {
+  @mixin font-light 24px, 28px;
+  display: block;
+  margin-bottom: 30px;
+  text-align: center;
+}

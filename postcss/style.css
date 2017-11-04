@@ -1,0 +1,149 @@
+
+@import "base/normalize.css";
+@import "abstract/variables.css";
+@import "abstract/mixin.css";
+@import "base/fonts.css";
+@import "base/global.css";
+
+@import "blocks/main-nav.css";
+@import "blocks/btn.css";
+
+/*
+@import "blocks/contacts.css";
+@import "blocks/editor.css";
+@import "blocks/features.css";
+@import "blocks/footer.css";
+@import "blocks/form.css";
+@import "blocks/likes.css";
+@import "blocks/logo.css";
+@import "blocks/main-contact.css";
+@import "blocks/main-text.css";
+@import "blocks/map.css";
+@import "blocks/page-footer.css";
+@import "blocks/page-header.css";
+@import "blocks/photo.css";
+@import "blocks/price.css";
+@import "blocks/reviews.css";
+@import "blocks/slider.css";
+@import "blocks/social-block.css";
+@import "blocks/social-icons.css";
+@import "blocks/stores.css";
+*/
+.welcome-page {
+  position: relative;
+}
+.welcome-page__links {
+  position: relative;
+  display: flex;
+}
+.welcome-page__link {
+  position: relative;
+  width: 50%;
+  height: 100vh;
+  font-family: "Playfair Display";
+  text-decoration: none;
+}
+.welcome-page__link--wed {
+  background: url("../img/IMG_5731edit1.jpg") no-repeat 70% 0%;
+  background-size: cover;
+  border-right: 2px solid white;
+}
+
+.welcome-page__link--ad {
+  background: url("../img/IMG_5180.jpg") no-repeat center;
+  background-size: cover; 
+  border-left: 2px solid white;
+}
+.welcome-page__shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  transition: opacity .8s ease-in-out;
+  z-index: 4;
+}
+.welcome-page__link:hover > .welcome-page__shadow {
+  opacity: 0;
+}
+.welcome-page__shadow:hover {
+  transition: opacity .8s ease-in-out;
+}
+.welcome-page__link-title {
+  position: absolute;
+  bottom: 4%;
+  font-size: 5.5vw;
+  font-weight: 400;
+  line-height: 5vw;
+  font-style: italic;
+  text-align: right;
+  z-index: 10;
+}
+.welcome-page__link-title--wed {
+  left: 10%;
+  color: black;
+}
+.welcome-page__link-title--ad {
+  color: white;
+  right: 10%;
+}
+
+.logo {
+  position: relative;
+}
+.logo--wed-page {
+  
+}
+.main-href {
+  text-decoration: none;
+  @media ($tablet-width) {
+    text-align: center;
+  }
+}
+.logo--welcome {
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+  z-index: 100;
+}
+.logo__foto {
+  margin-left: 20px;
+  font-family: "Playfair Display";
+  font-size: 15px;
+  font-weight: 400;
+  font-style: italic;
+  color: white;
+}
+.logo__foto--wed-page {
+  color: black;
+}
+.logo__name {
+  margin: 0;
+  font-family: "Oswald";
+  font-weight: 200;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 25px;
+  color: white;
+}
+.logo__name--wed-page {
+  color: black;
+}
+.logo__name_color {
+  font-weight: 400;
+  color: #e2160e;
+}
+
+.img__main {
+  width: 33%;
+  margin: 0.15%;
+}
+.main-content {
+  margin: 0 auto;
+}
+.grid {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
