@@ -1,0 +1,58 @@
+.logo {
+  text-decoration: none;
+  z-index: 100;
+  @media ($tablet-width) {
+    text-align: center;
+  }
+  @media ($desktop-width) {
+    width: 300px;
+  }
+  &--welcome-page {
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+  }
+}
+.logo__title {
+  position: relative;
+  color: white;
+  @media ($mobile-width) {
+    display: inline-block;
+  }
+  @media ($tablet-width) {
+    margin-bottom: 0;
+  }
+  @media ($desktop-width) {
+    margin-bottom: 0;
+  }
+}
+.logo__foto {
+  position: absolute;
+  top: -20px;
+  margin-left: 20px;
+  font-family: "Playfair Display";
+  font-size: 15px;
+  font-weight: 400;
+  font-style: italic;
+  &--black {
+    color: black;
+  }
+}
+.logo__name {
+  font-family: "Oswald";
+  font-weight: 200;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 30px;
+  &--black {
+    color: black;
+  }
+}
+.logo__surname {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 30px;
+  color: #e2160e;    
+}

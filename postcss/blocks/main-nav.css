@@ -5,29 +5,17 @@
     @mixin wrap-desktop;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-  }
-}
-.main-nav__header {
-  position: relative;
-  height: 0px;
-  @media ($mobile-width) {
-    @mixin wrap-mobile;
-    height: 75px;
-  }
-  @media ($tablet-width) {
-    @mixin wrap-tablet;
-    min-height: 83px;
-    height: 100px;
+    align-items: flex-end;
   }
 }
 .main-nav__btn-toggle {
   display: none;
+  z-index: 100;
 
   @media ($mobile-width) {
     @mixin btn-reset;
     position: absolute;
-    top: 33px;
+    top: 30px;
     right: 6.25%;
     width: 35px;
     height: 35px;
@@ -48,19 +36,19 @@
   display: flex;
   justify-content: space-around;
   width: 100%;
+  z-index: 100;
 
   @media ($mobile-width) {
-    display: none;
+    display: block;
     position: absolute;
-    top: 0;
+    top: -300px;
     left: 0;
     right: 0;
+    background-color: rgba(255,255,255,.95);
     animation: hint-anim-hide 0.5s;
     animation-fill-mode: forwards;
   }
   &--opened {
-    display: block;
-    background-color: rgba(255,255,255,.95);
     top: 0;
     animation: hint-anim-show 0.5s;
     animation-fill-mode: forwards;
@@ -74,9 +62,10 @@
   @mixin link-style;
   @media ($tablet-width) {
     @mixin link-style;
+    @mixin font-light 18px, 40px;
   }
   @media ($desktop-width) {
-    @mixin font-light 18px, 60px;
+    @mixin font-light 18px, 25px;
   }
 }
 /* Поправить */
@@ -87,7 +76,7 @@
       content: "";
       position: absolute;
       width: 100%;
-      bottom: 0;
+      bottom: -9px;
       left: 0;
       border: 1px solid  #e2160e;
     }
@@ -113,13 +102,13 @@
     display: block;
   }
   100% {
-    top: 0;
+    top: 70px;
   }
 }
 @keyframes hint-anim-hide {
   0% {
     display: block;
-    top: 0;
+    top: 70px;
   }
   99% {
     top: -300px;

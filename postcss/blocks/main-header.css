@@ -1,0 +1,13 @@
+.main-header {
+  position: relative;
+  background-color: white;
+  @media ($mobile-width) {
+    @mixin wrap-mobile;
+  }
+  @media ($tablet-width) {
+    @mixin wrap-tablet;
+  }
+  @media ($desktop-width) {
+    min-height: 60px;
+  }
+}

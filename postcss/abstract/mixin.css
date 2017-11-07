@@ -1,6 +1,7 @@
 $mobile-width: (max-width: 399px);
-$tablet-width: ((min-width: 400px) and (max-width: 799px));
-$desktop-width: (min-width: 800px);
+$tablet-width: (min-width: 400px) and (max-width: 767px);
+$desktop-width: (min-width: 768px);
+$retina: (min-resolution: 144dpi), (min-resolution: 1.5dppx);
 
 @define-mixin wrap-mobile{
   width: 100%;
